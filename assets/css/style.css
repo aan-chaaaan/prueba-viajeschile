@@ -2,10 +2,8 @@
     background-color: #000;
 }
 
-
-
 .navbar {
-    background: transparent !important;
+    background: none !important;
 }
 
 .coloricons {

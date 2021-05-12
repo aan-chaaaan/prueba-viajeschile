@@ -17,6 +17,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg px-5">
+
         <a class="navbar-brand text-light px-5" href="#">Viajes Chile</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,14 +35,17 @@
     <header>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active img-fluid">
-                    <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="img-fluid">
+                <div class="carousel-item active">
+                    <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item img-fluid">
-                    <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="img-fluid">
+                <div class="carousel-item">
+                    <img src="./assets/img/card2.jpg" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item img-fluid">
-                    <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="img-fluid">
+                <div class="carousel-item">
+                    <img src="./assets/img/card3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/card4.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -112,9 +116,9 @@
                 <div class="card-deck">
                     <div class="card col-sm-12 col-md-3 px-0">
                         <img src="./assets/img/card1.jpg" class="card-img-top tarjeta1" alt="img-fluid">
-                        <div class="card-body bg-info text-white">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a
+                        <div class="card-body bg-info text-white body1">
+                            <h5 class="card-title titulo1">Card title</h5>
+                            <p class="card-text texto1">This is a longer card with supporting text below as a
                                 natural lead-in
                                 to additional content. This content is a little bit longer.
                             </p>
@@ -122,19 +126,44 @@
                     </div>
                     <div class="card col-sm-12 col-md-3 px-0">
                         <img src="./assets/img/card2.jpg" class="card-img-top tarjeta2" alt="img-fluid">
-                        <div class="card-body bg-info text-white">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text text-white">This card has supporting text below as a natural lead-in to
+                        <div class="card-body bg-info text-white body2">
+                            <h5 class="card-title" data-toggle="modal" data-target="#titulodos">Card title
+                            </h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to
                                 additional
                                 content.
                             </p>
                         </div>
                     </div>
+                    <div class="modal fade" id="titulodos" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">lorem impsum</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel porro sunt, itaque
+                                        repellat voluptatum praesentium ducimus quo blanditiis. Eos quidem odit voluptas
+                                        at laudantium omnis necessitatibus alias, pariatur quia error. Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Numquam, tempora cupiditate! Explicabo
+                                        fuga at vel maxime fugit tenetur facere ab, sunt sed natus, quae voluptatem iste
+                                        suscipit! Fugiat, blanditiis molestias!</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="card col-sm-12 col-md-3 px-0">
                         <img src="./assets/img/card3.jpg" class="card-img-top tarjeta3" alt="img-fluid">
-                        <div class="card-body bg-info text-white">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural
+                        <div class="card-body bg-info text-white body3">
+                            <h5 class="card-title titulo3">Card title</h5>
+                            <p class="card-text texto3">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content. This card has even longer content than the first to show that equal
                                 height action.
@@ -143,9 +172,9 @@
                     </div>
                     <div class="card col-sm-12 col-md-3 px-0">
                         <img src="./assets/img/card4.jpg" class="card-img-top tarjeta4" alt="img-fluid">
-                        <div class="card-body bg-info text-white">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural
+                        <div class="card-body bg-info text-white body4">
+                            <h5 class="card-title titulo4">Card title</h5>
+                            <p class="card-text texto4">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content. This card has even longer content than the first to show that equal
                                 height action.
@@ -184,10 +213,14 @@
             <div class="row">
                 <h4 class="col-sm-12 col-md-6 text-light text-center p-1">VIAJES CHILE</h4>
                 <div class="col-sm-12 col-md-6 text-center coloricons">
-                    <i class="fab fa-github-square fa-2x p-1"></i>
-                    <i class="fab fa-linkedin fa-2x p-1"></i>
-                    <i class="fab fa-twitter-square fa-2x p-1"></i>
-                    <i class="fab fa-facebook-square fa-2x p-1"></i>
+                    <i class="fab fa-github-square fa-2x p-1" data-toggle="tooltip" data-placement="top"
+                        title="Encuentranos en Github"></i>
+                    <i class="fab fa-linkedin fa-2x p-1" data-toggle="tooltip" data-placement="top"
+                        title="En Linkedin"></i>
+                    <i class="fab fa-twitter-square fa-2x p-1" data-toggle="tooltip" data-placement="top"
+                        title="También en twitter "></i>
+                    <i class="fab fa-facebook-square fa-2x p-1" data-toggle="tooltip" data-placement="top"
+                        title="O en Facebook ;)"></i>
                 </div>
             </div>
         </div>
