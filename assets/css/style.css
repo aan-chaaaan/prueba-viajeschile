@@ -1,0 +1,25 @@
+.container-fluid {
+    background-color: #000;
+}
+
+.navbar {
+    background: transparent;
+}
+
+.imagencarrusel1 {
+    background: url(../img/carousel1.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+.imagencarrusel2 {
+    background: url(../img/carousel2.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+.imagencarrusel3 {
+    background: url(../img/carousel3.jpg) no-repeat center;
+    background-size: cover;
+
+}
