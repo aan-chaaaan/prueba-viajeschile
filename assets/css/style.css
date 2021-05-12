@@ -2,8 +2,10 @@
     background-color: #000;
 }
 
+
+
 .navbar {
-    background: transparent;
+    background: transparent !important;
 }
 
 .coloricons {
@@ -12,4 +14,8 @@
 
 hr {
     border-top: 1px solid #00aae4;
+}
+
+.tarjeta2 {
+    height: 11rem;
 }
