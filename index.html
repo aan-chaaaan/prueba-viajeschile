@@ -8,7 +8,6 @@
     <title>Viajes Chile</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <!--googlefonts-->
     <link rel="shortcut icon" href="./assets/img/viajes.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -16,23 +15,25 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg px-5">
-
-        <a class="navbar-brand text-light px-5" href="#">Viajes Chile</a>
+    <nav class="navbar navbar-expand-lg btn-info px-3">
+        <div class="px-5">
+            <img src="./assets/img/viajes.svg" class="logo" alt="svg">
+            <a class="navbar-brand text-light" href="#">Viajes Chile</a>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end px-5" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active text-light" href="#">Inicio <span class="sr-only">(current)</span></a>
-                <a class="nav-link text-light" href="#">Quienes somos</a>
-                <a class="nav-link text-light" href="#">Destacados</a>
-                <a class="nav-link text-light" href="#">Contacto</a>
+                <a class="nav-link active text-light" href="#home">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-light" href="#about">Quiénes somos</a>
+                <a class="nav-link text-light" href="#destacados">Destacados</a>
+                <a class="nav-link text-light" href="#contact">Contacto</a>
             </div>
         </div>
     </nav>
-    <header>
+    <header id="home" class="link">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -58,7 +59,7 @@
             </a>
         </div>
     </header>
-    <section class="container-fluid d-none d-md-block p-5 pb-5">
+    <section id="about" class="container-fluid d-none d-md-block p-5 pb-5 link">
         <h3 class="text-center text-light pb-2">¿Quiénes somos?</h3>
         <hr>
         <div class="container text-light pt-3">
@@ -108,84 +109,165 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid p-5">
+    <!----seccion tarjetas-->
+    <section id="destacados" class="container-fluid p-5 link">
         <h3 class="text-center text-light pb-2">Destacados</h3>
         <hr>
         <div class="container">
             <div class="row">
                 <div class="card-deck">
                     <div class="card col-sm-12 col-md-3 px-0">
-                        <img src="./assets/img/card1.jpg" class="card-img-top tarjeta1" alt="img-fluid">
+                        <img src="./assets/img/card1.jpg" class="card-img-top tarjeta1" alt="img-fluid"
+                            data-toggle="tooltip" data-placement="bottom"
+                            title="Haz clic en el título para ver más información">
                         <div class="card-body bg-info text-white body1">
-                            <h5 class="card-title titulo1">Card title</h5>
-                            <p class="card-text texto1">This is a longer card with supporting text below as a
-                                natural lead-in
-                                to additional content. This content is a little bit longer.
+                            <a class="btn btn-primary" class="card-title" data-toggle="modal"
+                                data-target="#vermas1">LOREM IPSUM</a>
+                            <p class=" card-text pt-2">This is a longer card with supporting text below as a natural
+                                lead-to
+                                additional content. This content is a little bit longer.
                             </p>
                         </div>
                     </div>
-                    <div class="card col-sm-12 col-md-3 px-0">
-                        <img src="./assets/img/card2.jpg" class="card-img-top tarjeta2" alt="img-fluid">
-                        <div class="card-body bg-info text-white body2">
-                            <h5 class="card-title" data-toggle="modal" data-target="#titulodos">Card title
-                            </h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to
-                                additional
-                                content.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="titulodos" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
+                    <div class="modal fade" id="vermas1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">lorem impsum</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">LOREM IPSUM</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel porro sunt, itaque
-                                        repellat voluptatum praesentium ducimus quo blanditiis. Eos quidem odit voluptas
-                                        at laudantium omnis necessitatibus alias, pariatur quia error. Lorem ipsum dolor
-                                        sit amet consectetur adipisicing elit. Numquam, tempora cupiditate! Explicabo
-                                        fuga at vel maxime fugit tenetur facere ab, sunt sed natus, quae voluptatem iste
-                                        suscipit! Fugiat, blanditiis molestias!</p>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, aliquid
+                                        reiciendis accusamus assumenda ratione voluptatum necessitatibus rem. Voluptas
+                                        vel impedit mollitia molestiae illum reprehenderit id nam, est maiores corrupti
+                                        molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                                        atque odio veritatis laborum quibusdam debitis molestiae quod doloremque nobis
+                                        in cupiditate magni facilis repellendus necessitatibus eveniet odit fugiat iste
+                                        iusto.</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card col-sm-12 col-md-3 px-0">
-                        <img src="./assets/img/card3.jpg" class="card-img-top tarjeta3" alt="img-fluid">
-                        <div class="card-body bg-info text-white body3">
-                            <h5 class="card-title titulo3">Card title</h5>
-                            <p class="card-text texto3">This is a wider card with supporting text below as a natural
-                                lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.
+                        <img src="./assets/img/card2.jpg" class="card-img-top tarjeta2" alt="img-fluid"
+                            data-toggle="tooltip" data-placement="bottom"
+                            title="Haz clic en el título para ver más información">
+                        <div class="card-body bg-info text-white">
+                            <a class="btn btn-primary" class="card-title" data-toggle="modal"
+                                data-target="#vermas1">LOREM IPSUM</a>
+                            <p class=" card-text pt-2">This is a longer card with supporting text below as a natural
+                                lead-to
+                                additional content. This content is a little bit longer.
                             </p>
                         </div>
                     </div>
+                    <div class="modal fade" id="vermas2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">LOREM IPSUM</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quis atque
+                                        consequatur adipisci quod veritatis repellendus vitae eos ullam? Non odio
+                                        explicabo alias ipsa ipsum, tempore delectus minima sit impedit! Lorem ipsum
+                                        dolor sit amet consectetur adipisicing elit.Quod corrupti reiciendis voluptas,
+                                        sint distinctio architecto quidem officia! Fugiat distinctio necessitatibus,
+                                        sint, odio, atque sit quasi dignissimos ad enim facilis accusantium.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="card col-sm-12 col-md-3 px-0">
-                        <img src="./assets/img/card4.jpg" class="card-img-top tarjeta4" alt="img-fluid">
-                        <div class="card-body bg-info text-white body4">
-                            <h5 class="card-title titulo4">Card title</h5>
-                            <p class="card-text texto4">This is a wider card with supporting text below as a natural
-                                lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.
+                        <img src="./assets/img/card3.jpg" class="card-img-top" alt="img-fluid" data-toggle="tooltip"
+                            data-placement="bottom" title="Haz clic en el título para ver más información">
+                        <div class="card-body bg-info text-white">
+                            <a class="btn btn-primary" class="card-title" data-toggle="modal"
+                                data-target="#vermas1">LOREM IPSUM</a>
+                            <p class=" card-text pt-2">This is a longer card with supporting text below as a natural
+                                lead-to
+                                additional content. This content is a little bit longer.
                             </p>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="vermas3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">LOREM IPSUM</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quis atque
+                                        consequatur adipisci quod veritatis repellendus vitae eos ullam? Non odio
+                                        explicabo alias ipsa ipsum, tempore delectus minima sit impedit! Lorem ipsum
+                                        dolor, sit amet consectetur adipisicing elit. Repudiandae velit nulla totam
+                                        debitis aliquam ex non officiis obcaecati! Odit quae vitae illum sit labore
+                                        voluptatum, eaque sequi. Vero, et voluptatem.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-3 px-0">
+                        <img src="./assets/img/card4.jpg" class="card-img-top" alt="img-fluid" data-toggle="tooltip"
+                            data-placement="bottom" title="Haz clic en el título para ver más información">
+                        <div class="card-body bg-info text-white">
+                            <a class="btn btn-primary" class="card-title" data-toggle="modal"
+                                data-target="#vermas1">LOREM IPSUM</a>
+                            <p class=" card-text pt-2">This is a longer card with supporting text below as a natural
+                                lead-to
+                                additional content. This content is a little bit longer.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="vermas4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">LOREM IPSUM</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quis atque
+                                        consequatur adipisci quod veritatis repellendus vitae eos ullam? Non odio
+                                        explicabo alias ipsa ipsum, tempore delectus minima sit impedit! Lorem ipsum
+                                        dolor sit amet consectetur adipisicing elit. Maiores impedit quisquam nemo
+                                        possimus doloribus nulla, quam ipsa natus vero dolores ducimus repudiandae
+                                        debitis, corporis vitae molestiae placeat exercitationem numquam voluptatum!</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="container-fluid p-5 ">
+    <section id="contact" class="container-fluid p-5 link">
         <h3 class="text-center text-light pb-2">Contacto</h3>
         <hr>
         <div class="typeform-widget" data-url="https://form.typeform.com/to/zCKW5uAm?typeform-medium=embed-snippet"
@@ -212,15 +294,15 @@
         <div class="container">
             <div class="row">
                 <h4 class="col-sm-12 col-md-6 text-light text-center p-1">VIAJES CHILE</h4>
-                <div class="col-sm-12 col-md-6 text-center coloricons">
-                    <i class="fab fa-github-square fa-2x p-1" data-toggle="tooltip" data-placement="top"
-                        title="Encuentranos en Github"></i>
-                    <i class="fab fa-linkedin fa-2x p-1" data-toggle="tooltip" data-placement="top"
-                        title="En Linkedin"></i>
-                    <i class="fab fa-twitter-square fa-2x p-1" data-toggle="tooltip" data-placement="top"
-                        title="También en twitter "></i>
-                    <i class="fab fa-facebook-square fa-2x p-1" data-toggle="tooltip" data-placement="top"
-                        title="O en Facebook ;)"></i>
+                <div class="col-sm-12 col-md-6 text-center">
+                    <a href="https://github.com/" target="_blank" class="fab fa-github-square fa-2x p-1"
+                        style="color:#fff"></a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="fab fa-linkedin fa-2x p-1"
+                        style="color:#fff"></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank" class="fab fa-twitter-square fa-2x p-1"
+                        style="color:#fff"></a>
+                    <a href="https://wwww.facebook.com" target="_blank" class="fab fa-facebook-square fa-2x p-1"
+                        style="color:#fff"></a>
                 </div>
             </div>
         </div>

@@ -3,11 +3,7 @@
 }
 
 .navbar {
-    background: none !important;
-}
-
-.coloricons {
-    color: #fff;
+    background-color: #2498a3;
 }
 
 hr {
@@ -16,4 +12,9 @@ hr {
 
 .tarjeta2 {
     height: 11rem;
+}
+
+.logo {
+    width: 2rem;
+    height: 2rem;
 }
