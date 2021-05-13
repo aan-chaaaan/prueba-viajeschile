@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg btn-info px-3">
+    <nav class="navbar navbar-expand-lg btn-info px-3 fixed-top">
         <div class="px-5">
             <img src="./assets/img/viajes.svg" class="logo" alt="svg">
             <a class="navbar-brand text-light" href="#home">Viajes Chile</a>
@@ -62,10 +62,10 @@
         <div class="container text-light pt-3">
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="bg-info p-2 text-center">
+                    <div class="bg-info p-2 text-center plane">
                         <i class="fas fa-plane fa-2x"></i>
                     </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quidem esse
+                    <p class="text1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quidem esse
                         blanditiis amet
                         tenetur aspernatur dicta, tempora ut tempore consequatur dignissimos quia ratione nemo
                         voluptatibus nesciunt quod voluptates! Nihil, repellendus?Lorem ipsum dolor sit amet consectetur
@@ -75,7 +75,7 @@
                     </p>
                 </div>
                 <div class="col-sm-4">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quidem esse
+                    <p class="text2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quidem esse
                         blanditiis amet
                         tenetur aspernatur dicta, tempora ut tempore consequatur dignissimos quia ratione nemo
                         voluptatibus nesciunt quod voluptates! Nihil, repellendus?Lorem ipsum dolor sit amet
@@ -85,15 +85,15 @@
                         magnam rerum, voluptatem consectetur obcaecati, magni similique officiis consequatur cumque,
                         debitis aperiam.
                     </p>
-                    <div class="bg-info p-2 text-center">
+                    <div class="bg-info p-2 text-center mountain">
                         <i class="fas fa-mountain fa-2x"></i>
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="bg-info p-2 text-center">
+                    <div class="bg-info p-2 text-center route">
                         <i class="fas fa-route fa-2x"></i>
                     </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quidem esse
+                    <p class="text3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quidem esse
                         blanditiis amet
                         tenetur aspernatur dicta, tempora ut tempore consequatur dignissimos quia ratione nemo
                         voluptatibus nesciunt quod voluptates! Nihil, repellendus?Lorem ipsum dolor sit amet
@@ -106,7 +106,7 @@
             </div>
         </div>
     </section>
-    <!----seccion tarjetas-->
+    <!--seccion tarjetas-->
     <section id="destacados" class="container-fluid p-5 link">
         <h3 class="text-center text-light pb-2">Destacados</h3>
         <hr>
@@ -117,15 +117,18 @@
                         <img src="./assets/img/card1.jpg" class="card-img-top tarjeta1" alt="img-fluid"
                             data-toggle="tooltip" data-placement="bottom"
                             title="Haz clic en el título para ver más información">
-                        <div class="card-body bg-info text-white body1">
-                            <a class="btn btn-primary" class="card-title" data-toggle="modal"
-                                data-target="#vermas1">LOREM IPSUM</a>
-                            <p class=" card-text pt-2">This is a longer card with supporting text below as a natural
-                                lead-to
-                                additional content. This content is a little bit longer.
+                        <div class="card-body bg-info text-white">
+                            <div class="text-center">
+                                <a class="btn btn-primary titulo1" class="card-title" data-toggle="modal"
+                                    data-target="#vermas1">LOREM IPSUM</a>
+                            </div>
+                            <p class=" card-text pt-2">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt facilis voluptatibus
+                                nobis sequi hic quam quia aut dolorum similique vel.
                             </p>
                         </div>
                     </div>
+                    <!---modal-->
                     <div class="modal fade" id="vermas1" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
@@ -156,14 +159,17 @@
                             data-toggle="tooltip" data-placement="bottom"
                             title="Haz clic en el título para ver más información">
                         <div class="card-body bg-info text-white">
-                            <a class="btn btn-primary" class="card-title" data-toggle="modal"
-                                data-target="#vermas1">LOREM IPSUM</a>
-                            <p class=" card-text pt-2">This is a longer card with supporting text below as a natural
-                                lead-to
-                                additional content. This content is a little bit longer.
+                            <div class="text-center">
+                                <a class="btn btn-primary titulo2" class="card-title" data-toggle="modal"
+                                    data-target="#vermas2">LOREM IPSUM</a>
+                            </div>
+                            <p class=" card-text pt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vel aliquid ducimus
+                                eaque sed fugit aspernatur veniam labore sint.
                             </p>
                         </div>
                     </div>
+                    <!---modal-->
                     <div class="modal fade" id="vermas2" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
@@ -192,14 +198,17 @@
                         <img src="./assets/img/card3.jpg" class="card-img-top" alt="img-fluid" data-toggle="tooltip"
                             data-placement="bottom" title="Haz clic en el título para ver más información">
                         <div class="card-body bg-info text-white">
-                            <a class="btn btn-primary" class="card-title" data-toggle="modal"
-                                data-target="#vermas1">LOREM IPSUM</a>
-                            <p class=" card-text pt-2">This is a longer card with supporting text below as a natural
-                                lead-to
-                                additional content. This content is a little bit longer.
+                            <div class="text-center">
+                                <a class="btn btn-primary titulo3" class="card-title" data-toggle="modal"
+                                    data-target="#vermas3">LOREM IPSUM</a>
+                            </div>
+                            <p class=" card-text pt-2">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, ex laboriosam
+                                tempore fugit temporibus enim recusandae non iure.
                             </p>
                         </div>
                     </div>
+                    <!---modal-->
                     <div class="modal fade" id="vermas3" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
@@ -228,14 +237,17 @@
                         <img src="./assets/img/card4.jpg" class="card-img-top" alt="img-fluid" data-toggle="tooltip"
                             data-placement="bottom" title="Haz clic en el título para ver más información">
                         <div class="card-body bg-info text-white">
-                            <a class="btn btn-primary" class="card-title" data-toggle="modal"
-                                data-target="#vermas1">LOREM IPSUM</a>
-                            <p class=" card-text pt-2">This is a longer card with supporting text below as a natural
-                                lead-to
-                                additional content. This content is a little bit longer.
+                            <div class="text-center">
+                                <a class="btn btn-primary titulo4" class="card-title" data-toggle="modal"
+                                    data-target="#vermas4">LOREM IPSUM</a>
+                            </div>
+                            <p class=" card-text pt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, consequatur!
+                                Accusantium sed aspernatur libero magnam obcaecati sapiente aliquam, commodi.
                             </p>
                         </div>
                     </div>
+                    <!---modal-->
                     <div class="modal fade" id="vermas4" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
@@ -260,6 +272,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -287,7 +300,7 @@
             })()
         </script>
     </section>
-    <footer class="container-fluid bg-info ">
+    <footer class="container-fluid bg-info">
         <div class="container">
             <div class="row">
                 <h4 class="col-sm-12 col-md-6 text-light text-center p-1">VIAJES CHILE</h4>
