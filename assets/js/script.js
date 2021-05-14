@@ -13,19 +13,21 @@ window.location.hash = hash;
 })
 }
 })
+});
 
+$(function () {
 $('[data-toggle="tooltip"]').tooltip()  
  
 $(".plane").click( function (){
-    $( ".text1" ).toggle();
+    $(".text1").toggle();
     });
 
 $(".mountain").click( function (){
-    $( ".text2" ).toggle();
+    $(".text2").toggle();
     });    
     
 $(".route").click( function (){
-    $( ".text3" ).toggle();
+    $(".text3").toggle();
     });
 
 
